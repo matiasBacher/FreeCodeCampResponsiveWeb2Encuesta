@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>encuesta</title>
+</head>
+
+<body>
+    <div id="mayor">
+        <header>
+            <h1 id="title">Formulario de encuesta</h1>
+            <p id="description">complete la siguiente encuesta</p>
+        </header>
+        <form action="get" id="survey-form">
+            <div id="name-div">
+                <label for="name" id="name-label">Nombre</label>
+                <input type="text" name="name" id="name" required placeholder="ingrese su nombre" id="name-label">
+            </div>
+            <div id="email-div">
+                <label for="email" id="email-label">Correo</label>
+                <input type="email" name="email" id="email" for="email" placeholder="ingrese su email" required>
+            </div>
+            <div id="number-div">
+                <label for="number" id="number-label">Edad</label>
+                <input type="number" name="number" id="number" min="1" max="120" placeholder="ingrese su edad" required>
+            </div>
+            <div id="select-div">
+                <label for="select">Provincia de residencia</label>
+                <select name="select" id="dropdown">
+                    <option value="disable" selected disabled> Seleccione la provincia de su residencia</option>
+                    <option value="misiones">misiones</option>
+                    <option value="corrientes">corrientes</option>
+                    <option value="Otra">Otra</option>
+                </select>
+            </div>
+            <div id="radio-div">
+                <p for="radio" id="radio-title">Situación sentimental</p>
+                <div id="inside-radio-div">
+                    <label for="soltero">
+                        <input type="radio" name="radio" id="soltero" value="soltero">
+                        Soltero
+                    </label>
+                    <label for="casado">
+                        <input type="radio" name="radio" id="casado" value="casado">
+                        Casado
+                    </label>
+                    <label for="viudo">
+                        <input type="radio" name="radio" id="viudo" value="viudo">
+                        Viudo
+                    </label>
+                </div>
+            </div>
+            <div id="check-box-div">
+                <p>¿A usted le gusta...?</p>
+                <div id="inside-check-box-div">
+                    <label for="gato"><input type="checkbox" name="gato" id="gato" value="gato">gato</label>
+                    <label for="perro"><input type="checkbox" name="perro" id="perro" value="perro">perro</label>
+                    <label for="pez"><input type="checkbox" name="pez" id="pez" value="pez">pez</label>
+                    <label for="tortuga"><input type="checkbox" name="tortuga" id="tortuga"
+                            value="tortuga">tortuga</label>
+                    <label for="loro"><input type="checkbox" name="loro" id="loro" value="loro">loro</label>
+                </div>
+            </div>
+            <div id="tex-area-div">
+                <label for="text-area">Deje un comentario</label>
+                <textarea name="text-area" id="text-area" cols="30" rows="10"></textarea>
+            </div>
+            <div id="submit-div"><button type="submit" id="submit">Enviar</button></div>
+        </form>
+    </div>
+</body>
+
+</html>
